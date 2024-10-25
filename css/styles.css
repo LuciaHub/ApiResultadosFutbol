@@ -1,0 +1,156 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebee;
+    color: #333;
+    padding: 20px;
+}
+  
+h1 {
+    margin-bottom: 20px; 
+}
+
+#jornadas {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 20px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 25px; 
+}
+
+.jornada {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.jornada h2 {
+    font-size: 1.8em;
+    color: #d32f2f;
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.partido {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+.partido:hover {
+    background-color: #f0f0f0;
+}
+
+.equipos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.equipoLocal, .equipoVisitante {
+    font-weight: bold;
+    width: 120px;
+    text-align: right;
+    color: #333;
+}
+
+.equipoLocal {
+    color: #1565c0;
+}
+
+.equipoVisitante {
+    color: #d32f2f;
+}
+
+.equipos p {
+    margin: 0;
+}
+
+.equipos p.vs {
+    color: #999;
+    font-size: 1.1em;
+}
+
+.goles {
+    display: flex;
+    gap: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+.golesLocal {
+    color: #1565c0;
+}
+
+.golesVisitante {
+    color: #d32f2f;
+}
+
+.goles p {
+    margin: 0;
+    text-align: center;
+}
+
+.equipos img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.partido .goles p {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#jornadaSelector {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    color: #333; 
+    background-color: #fff; 
+    cursor: pointer; 
+    margin-bottom: 20px;
+    transition: 0.2s ease; 
+}
+
+#jornadaSelector:focus {
+    border-color: #1565c0; 
+    outline: none; 
+}
+
+#jornadaSelector option {
+    padding: 10px; 
+    background-color: #fff; 
+    color: #333; 
+}
+
+#jornadaSelector option:hover {
+    background-color: #f0f0f0; 
+}
+
+footer p{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
